@@ -1,0 +1,852 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>RBC Trading Dashboard Styles</title>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		
+		<link href="css/html5reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+		<link href="favicon.png" rel="Shortcut Icon" />
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js" type="text/javascript"></script> <!--IE fix for reponsive design-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		
+		<!--[if lte IE 8]><script src="js/html5.js" type="text/javascript"></script><![endif]-->
+	</head>
+	<body>
+		<header class="navbar navbar-fixed-top">
+			<nav class="navbar-inner">
+			  <div class="container">
+  			  <a class="brand">RBC Trading Dashboard</a>
+  				<ul class="nav">
+  					<li class="active"><a href="#">Styleguide</a></li>
+  					<li><a href="resources.html">Dev Resources</a></li>
+  				</ul>
+			  </div>
+			</nav>
+		</header>
+		<div class="container main-content ">
+		  <div class="span3 left-menu affix-top affix">
+		    <ul class="nav nav-tabs tablet-no-affix nav-stacked span3 ">
+		      <li class="typography"><a href="#typography">Typography</a></li>
+  		    <li class="colors"><a href="#colors">Colors</a></li>
+  		    <li class="buttons"><a href="#buttons">Buttons</a></li>
+  		    <li class="dropdowns"><a href="#dropdowns">Dropdowns</a></li>
+  		    <li class="elements"><a href="#elements">Elements</a></li>
+  		    <li class="tables"><a href="#tables">Tables</a></li>
+  		    <li class="header"><a href="#header">Header</a></li>
+  		    <li class="layout"><a href="#layout">Layout</a></li>  		    
+		    </ul>
+		    <h6>Last Updated: 5 PM May 6th</h6>
+		  </div>
+		  <div class="span9 offset3">
+		  
+		    <!-- !Typography -->
+  		  <section id="typography">
+    		  <h1>Typography</h1>
+    		  <h2>Headers</h2>
+    		  <div class="example">
+    		    <h1>h1. First level headers are 30px Bold and colored #51535D.</h1>
+    		    <h2>h2. Second level headers are 21px Bold and colored #51535D.</h2>
+    		    <h3>h2. Third level headers are 18px Bold and colored #51535D.</h3>
+    		    <h4>h4. Fourth level headers are 16px Bold and colored #51535D.</h4>
+    		    <h5>h5. Fifth level headers are 14px Bold and colored #51535D.</h5>
+    		    <h6>h6. Sixth level headers are 12px and colored #768085.</h6>
+    		  </div>
+    		  <h2>Titles</h2>
+    		   <div class="example">
+    		   		<h3 class="symbol-title">Symbol titles for Symbol pages are 21 px Bold and colored with #51555D</h3>
+    		   		<h3 class="module-title">Module Titles should be set at 16px Semibold and colored with #51555D</h3>
+    		   		<a href="#"class="article-title emphasis">Article Titles should be set at 14px Bold and colored with #004B83 because they are links.</a>
+    		   </div>
+    		  <h2>Paragraphs</h2>
+    		  <div class="example">
+    		    <p class="story">Paragraphs for stories or articles are 16px big and have a line height of 1.3 for better readability. Their weight is normal/regular and are colored with #51555D. If there is a symbol present within the article, like <a href="#aapl" class="context-symbol">AAPL</a> then it should be set differently. Those should be bold and colored with #005392.</p>
+    		    <p class="summary">Paragraphs for summaries of articles or stories are 12px big and also have a line height of 1.3 for better readability. Their weight is also normal/regular and are also colored with #51555D. If there is a symbol present within the summary, like <a href="#goog" class="context-symbol">GOOG</a> then it should also be set differently. It should be bold and colored with #005392.</p>
+    		  </div>
+    		  <h2>Captions</h2>
+    		  <div class="example">
+    		  	<p class="caption">Disclaimers and explanations that say things like "As of market close" are 10px, and they are colored #9FA0A3</p>
+    		  	<p class="article-meta">Information about an article such as "2 hours ago" and "Reuters" on an Article page is 12px bold and #768085</p>
+    		  </div>
+    		   
+  		  </section>
+  		  
+  		  <!-- !Colors -->
+  		  <section id="colors">
+  		    <h1>Colors</h1>
+  		    <h2>Solid colors</h2>
+  		    <h3>Module</h3>
+  		    <div class="color module-bg">&nbsp;</div>
+    		  <pre>
+background-color: #e6e7ea;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(230, 231, 234)), to(rgb(251, 251, 251)));
+background-image: -webkit-linear-gradient(top, rgb(230, 231, 234), rgb(251, 251, 251));
+background-image: -moz-linear-gradient(top, rgb(230, 231, 234), rgb(251, 251, 251));
+background-image: -o-linear-gradient(top, rgb(230, 231, 234), rgb(251, 251, 251));
+background-image: -ms-linear-gradient(top, rgb(230, 231, 234), rgb(251, 251, 251));
+background-image: linear-gradient(top, rgb(230, 231, 234), rgb(251, 251, 251));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e6e7ea', EndColorStr='#fbfbfb');
+border: 1px solid #CCCCCC;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;</pre>
+        <h3>Chip colors</h3>
+        <ul class="color color-sample">
+          <li class="neg-3">&nbsp;</li>
+          <li class="neg-2">&nbsp;</li>
+          <li class="neg-1">&nbsp;</li>
+          <li class="neut">&nbsp;</li>
+          <li class="pos-1">&nbsp;</li>
+          <li class="pos-2">&nbsp;</li>
+          <li class="pos-3">&nbsp;</li>
+        </ul>
+        <div class="clear"></div>
+        <pre>
+.color .neg-3 { background-color: #CC0000; }
+.color .neg-2 { background-color: #990000; }
+.color .neg-1 { background-color: #770000; }
+.color .neut  { background-color: #7F8487; }
+.color .pos-1 { background-color: #005500; }
+.color .pos-2 { background-color: #007700; }
+.color .pos-3 { background-color: #009900; }</pre>
+		
+  		  </section>
+  		  
+  		  <!-- !Buttons -->
+  		  <section id="buttons">
+  		    <h1>Buttons</h1>
+  		    <h3>Standard</h3>
+  		    <div class="example" style="margin-top: 30px;">
+    		    <a href="#buttons" class="button">Add to watchlist</a>
+  		    </div>
+    		  <pre>
+.button, .button:link, .button:visited {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #004c8a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: semibold;
+  padding: 5px 10px 4px 10px;
+  line-height: 1.2;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #003561;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #dbdfe1;
+  background-color: #002a4d;
+}</pre>
+          <h3>Watchlists</h3>
+          <div class="example">
+            <a href="#buttons" class="button watchlist-btn" style="margin-right: 20px;">15 Recent Searches</a>
+            <a href="#buttons" class="button watchlist-btn-active">Investment</a>
+          </div>
+          <pre>
+.button.watchlist-btn, .button.watchlist-btn-active {
+  display: inline-block;
+  width: 80px;
+  padding: 7px 10px 6px 10px;
+  color: #51545D;
+  font-weight: bold;
+}
+
+.button.watchlist-btn:active, .button.watchlist-btn-active:active {
+  color: #393b41;
+}
+
+.button.watchlist-btn {
+  border: 1px solid #CCCCCC;
+  background-color: #E3E5E7;
+}
+
+.button.watchlist-btn-active {
+  border: 1px solid #C9C3BA;
+  background-color: #C9C3BA;
+}
+
+.button.watchlist-btn:hover {
+  background-color: #dbdee1;
+}
+
+.button.watchlist-btn:active {
+  background-color: #cdd1d5;
+}
+
+.button.watchlist-btn-active:hover {
+  border: 1px solid #c0b9af;
+  background-color: #c0b9af;
+}
+
+.button.watchlist-btn-active:active {
+  border: 1px solid #b0a89b;
+  background-color: #b0a89b;
+}</pre>
+		<h3>Tab Navigation</h3>
+        <div class="example">
+	        <ul class="tab-navigation">
+	        	<li class="nav-first"><a href="#" class="active">Charts</a></li>
+	        	<li><a href="#">Level II</a></li>
+	        	<li><a href="#">Research</a></li>
+	        	<li><a href="#">Options</a></li>
+	        	<li><a href="#">Financials</a></li>
+	        	<li class="nav-last"><a href="#">News</a></li>
+	        </ul>
+        </div>
+        <pre>
+.tab-navigation {
+	display: block;
+	padding: 0px 0px 12px 0px;
+}
+.tab-navigation li {
+	display: inline-block;
+	float: left;
+	height: 24px;
+	
+}
+.tab-navigation li a {
+	height: 24px;
+	display: block;
+	line-height: 24px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #777879;
+	border: solid 1px #C1C1C1;
+	border-left: 0px;
+	padding: 1px 8px 0 8px;
+	background: #eceeef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eceeef 0%, #d7d8d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eceeef), color-stop(100%,#d7d8d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eceeef 0%,#d7d8d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eceeef 0%,#d7d8d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eceeef 0%,#d7d8d9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eceeef 0%,#d7d8d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceeef', endColorstr='#d7d8d9',GradientType=0 ); /* IE6-9 */
+}
+.tab-navigation li.nav-first a {
+	-moz-border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-left: solid 1px #C1C1C1;
+}
+.tab-navigation li.nav-last a {
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.tab-navigation li a:link, .tab-navigation li a:visited {
+	text-decoration: none;
+}
+.tab-navigation li a:hover, .tab-navigation li a:active {
+	text-decoration: none;
+	color: #767778;
+	background-color: #f4f7f9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(244, 247, 249)), to(rgb(225, 226, 228)));
+	background-image: -webkit-linear-gradient(top, rgb(244, 247, 249), rgb(225, 226, 228));
+	background-image: -moz-linear-gradient(top, rgb(244, 247, 249), rgb(225, 226, 228));
+	background-image: -o-linear-gradient(top, rgb(244, 247, 249), rgb(225, 226, 228));
+	background-image: -ms-linear-gradient(top, rgb(244, 247, 249), rgb(225, 226, 228));
+	background-image: linear-gradient(top, rgb(244, 247, 249), rgb(225, 226, 228));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f4f7f9', EndColorStr='#e1e2e4');
+
+}
+.tab-navigation li a.active {
+	color: #fff;
+	background: #003460;
+	background: -moz-linear-gradient(top,  #003460 0%, #124679 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#003460), color-stop(100%,#124679));
+	background: -webkit-linear-gradient(top,  #003460 0%,#124679 100%);
+	background: -o-linear-gradient(top,  #003460 0%,#124679 100%);
+	background: -ms-linear-gradient(top,  #003460 0%,#124679 100%);
+	background: linear-gradient(to bottom,  #003460 0%,#124679 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003460', endColorstr='#124679',GradientType=0 );
+}
+</pre>
+
+  		  </section>
+  		  <!--Layout Elements-->
+  		  <section id="dropdowns">
+  		  	<h1>Dropdowns</h1>
+  		  	<h3>Triangle Dropdown</h3>
+  		  	<div class="example">
+  		  		<div class="dropdown-container">
+  		  			<div class="sprite">&nbsp;</div>
+	  		  		<ul class="dropdown">
+	  		  			<li><a href="#">Trade</a></li>
+	  		  			<li><a href="#">Inspect</a></li>
+	  		  			<li><a href="#">Delete</a></li>
+	  		  		</ul>
+  		  		</div>
+  		  		<div class="clear"></div>
+  		  	</div>
+  		  	<pre>.dropdown-container {
+	position: relative;
+	width: 100px; /*Total width= 100px*/
+}
+.dropdown {
+	overflow: hidden;
+	display:block;
+	border: solid 1px #CCCCCC;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #eaeaea;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(234, 234, 234)), to(rgb(247, 247, 247)));
+	background-image: -webkit-linear-gradient(top, rgb(234, 234, 234), rgb(247, 247, 247));
+	background-image: -moz-linear-gradient(top, rgb(234, 234, 234), rgb(247, 247, 247));
+	background-image: -o-linear-gradient(top, rgb(234, 234, 234), rgb(247, 247, 247));
+	background-image: -ms-linear-gradient(top, rgb(234, 234, 234), rgb(247, 247, 247));
+	background-image: linear-gradient(top, rgb(234, 234, 234), rgb(247, 247, 247));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eaeaea', EndColorStr='#f7f7f7');
+	box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.15);
+
+}
+.dropdown li {
+	padding: 0px;
+	text-align: center;
+	border-bottom: solid 1px #CCC;
+	width: 98px;
+}
+.dropdown li:last-child {
+	border-bottom: none;
+}
+.dropdown-container .dropdown li a {
+	color: #666666;
+	display: block;
+	border: none;
+	padding: 6px 0;
+	font-size: 12px;
+	font-weight: 600;
+	width: 100%;
+	cursor: pointer;
+}
+.dropdown-container .dropdown li a:hover, .dropdown-container .dropdown li a:active {
+	background-color: #e0e0e0;
+	border: none;
+	color: #002787;
+	
+}
+.dropdown-container .sprite {
+	background-position: -277px -73px;
+	width: 16px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	top:-7px;
+	right: 15px;
+	z-index: 10;
+}</pre>
+  		  </section>
+  		  <!--Layout Elements-->
+  		  <section id="elements">
+  		  	<h1>Layout Elements</h1>
+  		  	<h3>Sample Module</h3>
+  		  	<div class="example">
+  		  		<div class="module-bg module-padding">
+  		  			<span class="close-button">&times;</span>
+  		  			<h3 class="module-title">Research from Morningstar&reg;</h3>
+  		  			
+  		  			<ul class="three-column articles-list">
+  		  				<li class="article">
+			  		  		<h5 class="article-title"><a class="article-title" href="#">Costs Crimp Oil Search 2012 Profit, Balance Sheet May Labour</a></h5>
+			  		  		<p class="summary">Underlying 2012 net profit fell 35% to USD 153 million, around 10% below our USD 170 million forecast. The result was driven by 7% lower sales volumes due to an unexpected third-quarter inspection shut-in and higher unit costs and exploration&hellip;</p>
+  		  				</li>
+  		  				<li class="article">
+			  		  		<h5 class="article-title"><a class="article-title" href="#">Johnson Controls  Considering Sale of its Electronics Unit</a></h5>
+			  		  		<p class="summary">News broke Wednesday that Johnson Controls <a href="#jci" class="context-symbol">JCI</a> seeks to sell its automotive interiors business, but the company later issued a statement refuting that report. In the same statement, Johnson Controls said it has hired J.P . Morgan to&hellip;</p>
+  		  				</li>
+  		  				<!--<li class="article">
+			  		  		<h5 class="article-title">The National Australia Bank Phoenix Rises from the Ashes</h5>
+			  		  		<p class="summary">Like a phoenix rising from the ashes National Australia Bank (NAB) NAB is set to surprise with strong, high-quality earnings growth, resurrecting its long forgotten reputation as a sought-after major bank. NAB’s Achilles’ heal is U.K. banking, but we expect slow improvem...</p>
+  		  				</li>-->
+  		  			</ul>
+  		  			<div class="clear"></div>
+
+  		  		</div>
+  		  	</div>
+  		  	<pre>
+.example .module-title {
+	color: #51555D;
+	font-weight:600;
+	font-size:16px;
+	margin: 0 0 15px 0;
+}
+.example h5.article-title {
+	color:#004B83;
+	margin: 0 0 10px 0;
+	padding: 0px;
+	line-height: 16px;
+}
+.module-bg {
+	position: relative;
+}
+.module-padding {
+	padding: 11px 9px;
+}
+.module-padding h3 {
+	padding: 0px;
+	margin: 0px;
+}
+.three-column .article {
+	display: inline-block;
+	float: left;
+	width: 262px;
+	padding: 0px;
+	margin:0 20px 0 0;
+}
+.close-button {
+	font-size: 26px;
+	position: absolute;
+	top:10px;
+	right:10px;
+	cursor: pointer;
+}</pre>
+  		  	
+  		  	<h3>Sample Chips</h3>
+			<ul class="color example">
+				<li class="chip pos-3">
+					<a href="#aapl" class="chip-link">
+						<span class="triangle" onclick="showDropdown()">&#9662;</span>
+						<p class="chip-symbol with-rating">AAPL</p>
+						<p class="rating">Upgrade</p>
+						<p class="price">47.49</p>
+										
+						<p class="change">1.21&nbsp;&nbsp;3.16%</p>
+					</a>
+				</li>
+				<li class="chip neg-3">
+					<a href="#MSFT" class="chip-link">
+						<span class="triangle" onclick="showDropdown()">&#9662;</span>
+						<p class="chip-symbol with-rating">MSFT</p>
+						<p class="rating">Downgrade</p>
+						<p class="price">47.49</p>									
+						<p class="change">1.21&nbsp;&nbsp;3.16%</p>
+					</a>
+				</li>
+				<!--Show no rating-->
+				<li class="chip neut">
+					<a href="#GOOG" class="chip-link">
+						<span class="triangle" onclick="showDropdown()">&#9662;</span>
+						<p class="chip-symbol">GOOG</p>
+						<p class="price">827.49</p>			
+						<p class="change">1.21&nbsp;&nbsp;3.16%</p>
+					</a>
+				</li>				
+			</ul>
+			
+			<pre>
+ul.color .chip  {
+	display:block;
+	position: relative;
+	float:left;
+	width:184px; /*Total Width = 204px*/
+	height:40px; /*Total Height = 50px*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin:0px 5px 5px 0px;
+	padding: 5px 10px 5px 10px;
+	color: #FFF;
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+}
+ul.color .chip a:link, ul.color .chip a:visited{
+	padding: 0px;
+}
+.chip.pos-3:hover { background-color: #12b412; }
+.chip.pos-2:hover { background-color: #0e8d0e; }
+.chip.pos-1:hover { background-color: #0b6b0b; }
+.chip.neut:hover { background-color: #939a9e; }
+.chip.neg-3:hover { background-color: #e11616; }
+.chip.neg-2:hover { background-color: #ae1111; }
+.chip.neg-1:hover { background-color: #8d0f0f; }
+
+.example .chip .chip-symbol {
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+}
+.example .chip .chip-symbol.with-rating {
+	width:40%;
+}
+.chip .chip-symbol, .chip .price {
+	float:left;
+}
+.chip p {
+	display: inline-block;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+.chip .rating, .chip .change {
+	float:right;
+	text-align:right;
+}
+.chip .rating {
+	width: 55%;
+	padding-right: 5%;
+}
+.chip .triangle {
+	font-size:17px;
+	color: #EDEDED;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	position:absolute;
+	top:-1px;
+	right:6px;
+	cursor:pointer;
+}</pre>
+  		  </section>
+  		  
+  		  <!-- !Tables -->
+  		  <section id="tables">
+  		    <h1>Tables</h1>
+  		    <h2>Heavy data tables</h2>
+  		    <div class="example">
+    		    <table class="zebra">
+              <thead>
+                <tr>
+                  <th class="txt-align-left">Company Name</th>
+                  <th class="txt-align-left">Symbol</th>
+                  <th class="txt-align-right">Last Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Apple Inc.</td>
+                  <td>AAPL</td>
+                  <td class="txt-align-right semibold">$450.00</td>
+                </tr>
+                <tr>
+                  <td>Google Inc.</td>
+                  <td>GOOG</td>
+                  <td class="txt-align-right semibold">$810.00</td>
+                </tr>
+                <tr>
+                  <td>International Business Machines Corp.</td>
+                  <td>IBM</td>
+                  <td class="txt-align-right semibold">$210.00</td>
+                </tr>
+              </tbody>
+            </table>
+  		    </div>
+    		  <pre>
+.zebra th {
+  color: #999;
+  font-weight: 600;
+}
+
+.zebra tbody tr {
+  color: #666;
+  font-weight: normal;
+}
+
+.zebra tbody td, .zebra thead th {
+  padding: 9px 0 8px 0;
+}
+
+.zebra tr td:first-child, .zebra tr th:first-child {
+  padding-left: 10px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.zebra tr td:last-child, .zebra tr th:last-child {
+  padding-right: 10px;
+  -moz-border-radius-topright: : 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.zebra tbody tr:nth-child(2n-1) {
+  background-color: #ececec;
+}</pre>
+          <h2>Large light tables</h2>
+            <div class="example">
+              <table class="data-large">
+                <tr>
+                  <td>Last Price</td>
+                  <td class="txt-align-right">425.12 <span class="currency">CAD</span></td>
+                  <td class="empty-space"></td>
+                  <td>Price/Earnings Ratio</td>
+                  <td class="txt-align-right ">9.7</td>
+                </tr>
+                <tr>
+                  <td>Volume</td>
+                  <td class="txt-align-right">1,245,497</td>
+                  <td class="empty-space"></td>
+                  <td>Price/Book Ratio</td>
+                  <td class="txt-align-right">3.2</td>
+                </tr>
+              </table>
+            </div>
+            <pre>
+.data-large {
+  font-size: 14px;
+  color: #767F85;
+}
+
+.data-large td {
+  padding: 11px 0 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.data-large tr:first-child td {
+  border-top: 1px solid #ccc;
+}
+
+.data-large td:nth-child(3n-2) {
+  font-weight: normal;
+}</pre>
+
+          <h2>Small light tables</h2>
+          <div class="example">
+              <table class="data-small">
+                <tr>
+                  <td>Last Price</td>
+                  <td class="txt-align-right">425.12 <span class="currency">CAD</span></td>
+                  <td class="empty-space"></td>
+                  <td>Price/Earnings Ratio</td>
+                  <td class="txt-align-right">9.7</td>
+                </tr>
+                <tr>
+                  <td>Volume</td>
+                  <td class="txt-align-right">1,245,497</td>
+                  <td class="empty-space"></td>
+                  <td>Price/Book Ratio</td>
+                  <td class="txt-align-right">3.2</td>
+                </tr>
+              </table>
+            </div>
+            <pre>
+.data-small {
+  font-size: 12px;
+  color: #767F85;
+}
+
+.data-small td {
+  padding: 7px 0 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.data-small tr:first-child td {
+  border-top: 1px solid #ccc;
+}
+
+.data-small td:nth-child(3n-2) {
+  font-weight: normal;
+} </pre>
+		 <h2>Labelled tables</h2>
+            <div class="example">
+              <table class="data-labeled">
+                <tr>
+                  <th>Market Maker</th>
+                  <th class="txt-align-right" width="75px">Shares</th>
+                  <th class="txt-align-right emphasis" width="75px">Bid Price</th>
+                </tr>
+                <tr>
+                  <td>Direct Edge ECN, LLC</td>
+                  <td class="txt-align-right">100</td>
+                  <td class="txt-align-right highlighted-column">460.43</td>
+                </tr>
+                <tr>
+                  <td>Archipelago Stock Exchange</td>
+                  <td class="txt-align-right">50</td>
+                  <td class="txt-align-right highlighted-column">342.21</td>
+                  
+                </tr>
+                <tr>
+                	<td>Nasdaq Execution Services, Inc</td>
+                	<td class="txt-align-right">300</td>
+                	<td class="txt-align-right highlighted-column">402.31</td>
+                </tr>
+              </table>
+            </div>
+            <pre>
+table.data-labeled {
+	font-size: 13px;
+	font-weight: normal;
+}
+.data-labeled th {
+	text-align: left;
+	font-weight: 600;
+	color: #9FA2A3;
+	border-bottom: 1px solid #ccc;
+	padding: 8px;
+}
+.data-labeled th.txt-align-right{
+	text-align: right;
+}
+.data-labeled tr {
+	color: #666666;
+}
+.data-labeled td {
+	border-bottom: 1px solid #ccc;
+	padding: 8px 8px 8px 0;
+}
+.data-labeled th.highlighted-column {
+	font-weight: bold;
+	color: #51545D;
+	background-color: #AAB9C1;
+}
+.data-labeled td.highlighted-column {
+	background-color: #AAB9C1;
+}</pre>
+  		  </section>
+  		  
+  		  <!-- Header -->
+  		  <section id="header">
+  		    <h1>Header</h1>
+  		     <h3>Top Bar</h3>
+  		    <div class="example">
+	  		    <div class="top-navbar">
+	  		    	<p class="user-name">Welcome, A. Peeters<span class="sprite">&nbsp;</span></p>
+	  		    	<a class="account-name">Sample Account<span class="sprite">&nbsp;</span></a>
+	  		    	<ul class="top-nav">
+	  		    		<li><a href="#">Holdings</a></li>
+	  		    		<li><a href="#">Trade</a></li>
+	  		    		<li><a href="#">Order Status</a></li>
+	  		    	</ul>
+	  		    	
+	  		    </div>
+	  		    
+  		    </div>
+  		    <pre>.top-navbar {
+	width: 100%;
+	height: 32px;
+	color: #FFF;
+	background-color: #899299;
+	font-weight: bold; 
+	font-size: 12px;
+	line-height: 32px;
+	position: relative;
+	padding: 0px;
+	
+}
+.top-nav {
+	position: absolute;
+	left: 220px;
+	border-left: solid 1px #FFF;
+}
+.top-navbar a {
+	color: #FFF;
+}
+.top-navbar a:hover, .top-navbar:active {
+	background: #899299;
+	border: none;
+	cursor: pointer;
+}
+.top-nav li{
+	display: inline-block;
+	float: left;
+	height:32px;
+	text-transform: uppercase;
+	border-right:solid 1px #FFF;
+}
+.example .top-nav li a {
+	color: #FFF;
+	line-height: 31px;
+	padding: 1px 20px 0 20px;
+	display: block;
+}
+.example ul.top-nav li a:link,.example  .top-nav li a:visited {
+	background-color: #949CA3;
+	text-decoration: none;
+}
+.example .top-nav li a:hover, .top-nav li a:active {
+	background-color: #a3adb5;
+	text-decoration: none;
+	border-bottom: none;
+}
+.top-navbar a.account-name {
+	width: 220px;
+	padding: 1px 12px 0 12px;
+	display: block;
+	float: left; 
+	height: 31px;
+}
+.top-navbar .account-name .sprite {
+	display: inline-block;
+	width: 14px;
+	height: 9px;
+	margin: 11.5px 20px;
+	background-position: -169px -39px;
+	background-repeat: no-repeat;
+	float: right;
+
+}
+.top-navbar a:hover.account-name, .top-navbar a:active.account-name {
+	background-color: #A3ADB5;
+}
+.top-navbar .user-name {
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+.top-navbar .user-name .sprite {
+	display: inline-block;
+	background-position: -378px -7px;
+	width: 12px;
+	height: 12px;
+	margin: 10.5px 22px -2px 10px;
+}</pre>
+  		    <h3>Large Blue Header</h3>
+  		    <div class="example">
+	  		    <div class="header-bg">
+	  		    </div>
+  		    </div>
+  		    <pre>
+.header-bg {
+	width: 100%;
+	height: 100px;
+	border-bottom: solid 4px #899299;
+	background-color: #003360;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 51, 96)), to(rgb(0, 97, 165)));
+	background-image: -webkit-linear-gradient(top, rgb(0, 51, 96), rgb(0, 97, 165));
+	background-image: -moz-linear-gradient(top, rgb(0, 51, 96), rgb(0, 97, 165));
+	background-image: -o-linear-gradient(top, rgb(0, 51, 96), rgb(0, 97, 165));
+	background-image: -ms-linear-gradient(top, rgb(0, 51, 96), rgb(0, 97, 165));
+	background-image: linear-gradient(top, rgb(0, 51, 96), rgb(0, 97, 165));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#003360', EndColorStr='#0061a5');
+}
+  		    </pre>
+  		  </section>
+  		  
+  		  <!-- !Layout -->
+  		  <section id="layout">
+  		    <h1>Layout</h1>
+  		    <img src="img/layout.png">
+  		  </section>
+		</div>
+		<footer>
+		
+		</footer>
+		<script src="js/scripts.js" type="text/javascript"></script>
+	</body>
+</html>

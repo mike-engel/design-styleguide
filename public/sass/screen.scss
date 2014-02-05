@@ -1,0 +1,200 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "resets";
+@import "mixins";
+
+$fontColor: #333332;
+$sansFontStack: 'proxima-nova', Helvetica Neue, Helvetica, Arial, Sans-serif;
+$serifFontStack: 'ff-tisa-web-pro', Times New Roman, Serif;
+$serifFontStack2: 'kepler-std', Times New Roman, Serif;
+
+body {
+  background-color: #FFFFFF;
+}
+
+a {
+  outline: none;
+}
+
+.btn {
+  @include responsiveType(16);
+  @include borderRadius(3px);
+  border: none;
+  font-family: $sansFontStack;
+  padding: 10px 15px;
+  display: block;
+  
+  &:focus {
+    @include dropshadow(0,0,3px,rgba(0,0,10,.25));
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  font: 1.3em/1.45 $serifFontStack;
+  color: lighten($fontColor, 13%);
+  padding: 75px 15px 50px 15px;
+  
+  h1, h2, h3 {
+    font: 600 1em/1.3 $sansFontStack;
+  }
+  
+  h1 {
+    @include responsiveType(48);
+    font-weight: 700;
+    color: $fontColor;
+    margin-bottom: -5px;
+    padding: 0;
+  }
+  
+  h2 {
+    @include responsiveType(20);
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: lighten($fontColor, 50%);
+    margin-bottom: 50px;
+  }
+  
+  h3 {
+    @include responsiveType(28);
+    color: lighten($fontColor, 10%);
+    margin-top: 40px;
+  }
+  
+  p {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+  }
+  
+  form {
+    margin-top: 50px;
+    font-family: $sansFontStack;
+  
+    label {
+      display: inline-block;
+      @include responsiveType(16);
+      margin: 15px 0;
+      position: relative;
+      top: -10px;
+    }
+    
+    input {
+      @include borderRadius(3px);
+      @include responsiveType(15);
+      font-family: $sansFontStack;
+      border: 1px solid lighten($fontColor, 60%);
+      padding: 5px 8px;
+      width: 60%;
+      float: right;
+      outline: none;
+      
+      &:focus {
+        border: 1px solid lighten($fontColor, 20%);
+      }
+    }
+    
+    .parsley-error {
+      border: 1px solid #C81616;
+    }
+    
+    .remove-wrapper {
+      float: right;
+      width: 60%;
+      
+      input {
+        float: left;
+        width: 94.2%;
+      }
+    
+      .remove-section {
+        background-image: url('../media/sprites.png');
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-position: 0 0;
+        float: right;
+        position: relative;
+        top: 9px;
+        
+        &:hover {
+          background-position: -21px 0;
+        }
+      }
+    }
+    
+    .parsley-error-list {
+      text-align: right;
+      margin: 0;
+      padding: 0;
+      @include responsiveType(14);
+      margin: -15px 0 15px 0;
+    }
+    
+    .add-section {
+      padding: 5px 3px;
+      text-align: center;
+      border-radius: 3px;
+      background: #F8FAFA;
+      border: 1px solid #DFE6E6;
+      color: lighten($fontColor, 40%);
+      margin-top: 10px;
+      display: block;
+      width: 100%;
+      outline: none;
+      -moz-box-shadow:    0px 1px 1px 0px rgba(0,0,0,0.15);
+      -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
+      box-shadow:         0px 1px 1px 0px rgba(0,0,0,0.15);
+      -webkit-transition: background .2s ease;
+      -moz-transition:    background .2s ease;
+      -ms-transition:     background .2s ease;
+      transition:         background .2s ease;
+      
+      &:hover {
+        background: #fff;
+      }
+      
+      &:active {
+        background: #F0F5F5;
+      }
+      
+      &:focus {
+        border: 1px solid lighten($fontColor, 60%);
+        @include dropshadow(0,0,3px,lighten($fontColor, 50%));
+      }
+    }
+    
+    .form-submit {
+      border-radius: 3px;
+      background: #4DB061;
+      border: 1px solid #22A03B;
+      -moz-box-shadow:    0px 1px 0px 0px rgba(0,0,0,0.36);
+      -webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.36);
+      box-shadow:         0px 1px 0px 0px rgba(0,0,0,0.36);
+      color: #fff;
+      width: 150px;
+      margin: 50px auto;
+      outline: none;
+      -webkit-transition: background .2s ease;
+      -moz-transition:    background .2s ease;
+      -ms-transition:     background .2s ease;
+      transition:         background .2s ease;
+      
+      &:hover {
+        background: lighten(#4DB061, 7%);
+      }
+      &:active {
+        background: darken(#4DB061, 5%);
+      }
+      &:focus {
+        @include dropshadow(0,0,5px,#22A03B);
+      }
+    }
+  }
+}

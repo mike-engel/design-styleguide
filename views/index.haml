@@ -1,0 +1,35 @@
+!!! XML
+!!! 5
+%html{ lang: 'en' }
+  %head
+    %title Styleguide generator
+    %meta{ charset: 'UTF-8' }/
+    %link{ href: 'css/html5reset.css', rel: 'stylesheet', type: 'text/css' }/
+    %link{ href: 'css/screen.css', rel: 'stylesheet', type: 'text/css' }/
+    %link{ href: 'media/favicon.png', rel: 'Shortcut Icon' }/
+    %script{ src: '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js', type: 'text/javascript' }
+    = partial :typekit
+  
+  %body
+    .content
+      =styled_flash
+      %h1 Styleguide generator
+      %h2 or: How I Learned to Stop Worrying and Love the Code
+      %p So you've designed something. That's really cool, but, how is it going to get built? PDF styleguides are so 2012, and well, it's #{@this_year}.
+      
+      %p This tool, and by relation the styleguide, is super simple. It's going to generate a couple sections, a section for developer resources, and all the CSS and JS you need to get started. And you thought this was going to be hard. Need help though? Stand up and ask, "Who knows HTML and CSS?" and I'm sure someone will come walking over.
+      
+      %form{ class: 'generator-form', id: 'generator-form', action: '/download', enctype: 'multipart/form-data', method: 'post', data: { validate: 'parsley' } }
+        %label{ for: 'client-name' } Who's your client?
+        %input{ type: 'text', placeholder: 'Lovely client', autofocus: true, name: 'client_name', id: 'client_name', data: { required: 'true', trigger: 'change', error_message: 'Surely you have a client.', minlength: '2' } }/
+        .clear
+        %label{ for: 'project-name' } What project is this for?
+        %input{ type: 'text', placeholder: 'Client project', name: 'project_name', id: 'project_name', data: { required: 'true', trigger: 'change', required_message: 'Surely this is for a project.', minlength_message: 'Your project name needs to be at least 5 characters long', minlength: '5' } }/
+        .clear
+        %label{ for: 'section' } A section in your styleguide
+        %input{ type: 'text', placeholder: 'Typography', name: 'section[]', class: 'section', data: { required: 'true', trigger: 'blur', required_message: 'What, you want an empty styleguide?', minlength_message: 'Your section titles need to be longer than 5 characters', minlength: '5' } }/
+        .clear
+        %a{ href: '#add-new-section', class: 'btn add-section', id: 'js-add-section' } Add a section
+        %button{ type: 'submit', class: 'btn form-submit' } Get a styleguide
+    
+    %script{ src: 'javascripts/scripts-min.js', type: 'text/javascript' }

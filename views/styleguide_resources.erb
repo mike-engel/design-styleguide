@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title><%= @client %> <%= @project %> Styles</title>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		
+		<link href="css/html5reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+		<link href="img/favicon.png" rel="Shortcut Icon" />
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		
+		<!--[if lte IE 8]><script src="js/html5.js" type="text/javascript"></script><![endif]-->
+	</head>
+	<body>
+		<header class="navbar navbar-fixed-top">
+			<nav class="navbar-inner">
+			  <div class="container">
+  			  <a class="brand"><%= @client %> <%= @project %></a>
+  				<ul class="nav">
+  					<li><a href="index.html">Styleguide</a></li>
+  					<li class="active"><a href="#">Dev Resources</a></li>
+  				</ul>
+			  </div>
+			</nav>
+		</header>
+		<div class="container main-content ">
+		 
+		  <div class="span9">
+  			<section>
+  			  <!-- Keep a changelog to keep the devs informed! -->
+  			  <h2>Changelog</h2>
+  			  <p>We have created a changelog to keep track of what is different from day to day, found <a href="changelog.md">here</a></p>
+  			  <h2>Extra CSS Styles</h2>
+  			  <pre class="show resources-pre">
+.emphasis {
+	font-weight: bold;
+}
+.semibold {
+	font-weight: 600;
+}
+.bold {
+	font-weight: bold;
+}
+.txt-align-right {
+  text-align: right;
+}
+.txt-align-left {
+  text-align: left;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+.clear {
+  clear: both;
+}
+</pre>
+  			  <h2>Full CSS File</h2>
+  			  <p>The full CSS file that modifies the styleguide can be found <a href="css/stylesheet.css">here</a></p>
+  			  <h6 class="timestamp">Last Updated: <%= @timestamp %></h6>
+  			</section>
+		  </div>
+		</div>
+		<script src="js/scripts-min.js" type="text/javascript"></script>
+	</body>
+</html>

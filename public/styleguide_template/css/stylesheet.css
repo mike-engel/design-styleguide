@@ -1,0 +1,221 @@
+/*
+	BUG LIST
+	• Grasshopper
+	• Beetle
+	• Locust
+	• Safari does not acknowledge border radius on dropdown hovers
+*/
+
+/*
+** These are default styles. These setup the app and make the styleguide look good.
+** For styling the components of your design, use the space after these styles.
+*/
+
+.brand {
+	margin-left: 45px;
+}
+.main-content {
+  position: relative;
+  top: 61px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.main-content > .span9 {
+	margin-top: -90px;
+	margin-bottom: 50px;
+}
+
+.left-menu {
+  margin-left: 0;
+  
+}
+
+.left-menu a:hover, .left-menu a:active {
+  background-color: #f5f5f5;
+}
+
+.left-menu .active a {
+  background-color: #0088cc;
+  color: white;
+ 
+}
+
+.left-menu .active a:hover, .left-menu .active a:active {
+  background-color: #0088cc;
+  color: white;
+}
+
+.affix-top {
+ 	top:67px;
+ 	position: fixed;
+}
+
+.timestamp {
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center;
+  color: #adadad;
+}
+
+@media (max-width: 767px) {
+	.tablet-no-affix.affix {
+	  position: static;
+	  width: auto;
+	  top: 0;
+	}
+	.left-menu{
+		margin-top:-60px;
+	}
+	.brand {
+		margin-left: 0px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.navbar-fixed-top {
+		position: fixed;
+	}
+}
+
+pre {
+  position: relative;
+  behavior: url(pie/PIE.htc);
+  display: none;
+  background: #E6E6E6;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  margin-top: -1px;
+  z-index: 1;
+}
+pre.show {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+}
+pre.resources-pre {
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+}
+.datestamp {
+	display: inline-block;
+	padding: 3px 6px;
+	font-size: 10px;
+	font-family: arial;
+	color: #7a7a7a;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.code-button {
+	z-index: 10;
+	position: relative;
+	width: 100px;
+	text-align: left;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.code-button.code-open {
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-bottom: none;
+}
+.code-button .arrow {
+	-webkit-transition: all 0.35s ease;
+	-moz-transition: all 0.35s ease;
+	-ms-transition: all 0.35s ease;
+	-o-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	width: 0; 
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #AAAAAA;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.code-button.code-open .arrow {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+}
+.code-button:hover .arrow {
+	border-bottom: 7px solid #6f6f6f;
+}
+
+section {
+  margin-bottom: -50px;
+  padding-top: 90px;
+}
+
+.txt-align-right {
+  text-align: right;
+}
+
+.txt-align-left {
+  text-align: left;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.example {
+  width: 94%;
+  padding: 3%;
+  -moz-box-shadow:    inset 0 2px 3px rgba(0,0,0,.15);
+	-webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.15);
+	box-shadow:         inset 0 2px 3px rgba(0,0,0,.15);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 10px 0 20px 0;
+	border: 1px solid #d7d8d9;
+	background-color: #fdfdfd;
+	font-family: Proxima Nova, Helvetica Neue, Helvetica, Arial, Sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+
+/*
+** Style your design elements starting here.
+*/
+
